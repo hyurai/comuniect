@@ -1,3 +1,15 @@
+.user_show{
+    display: flex;
+    }
+.user_show_infomation{
+    display: flex;
+    flex-direction: column;
+    }
+.infomation-show-wrapper{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    }
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/

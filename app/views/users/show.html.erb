@@ -1,0 +1,18 @@
+<div class="user_show">
+  <div class = "user_show_infomation">
+    <p class="user_nickname"><%= @user.nickname%></p>
+    <p class="user_like_entertainer"><%= @user.like_entertainer%></p>
+  </div>
+  <div class="infomation-show-wrapper">
+    <h3 class = "qqq">僕のおすすめ女優</h3>
+    <div class="container">
+      <% @favorite_infomations.each do |favorite_infomation|%>
+       <img src = "<%= favorite_infomation.image_url%>" class = "user_favoire_image_url">
+       <div class = "user_favorite_text">
+         <p class = "user_favorite"><%= favorite_infomation.name%></p>
+         <p class="user_favorite_age"><%= favorite_infomation.age%></p>
+       </div>
+     <% end %>
+    </div>
+  </div>
+</div>

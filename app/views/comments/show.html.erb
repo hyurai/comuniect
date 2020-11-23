@@ -1,0 +1,19 @@
+<div class="comment_show">
+   <p class = "comment_text"><%= @comment.text%></p>
+     <div class = "answer_index">
+       <% @answers.each do |answer| %>
+         <% if  answer.comment.id == @comment.id%>
+           <div class = "answer_index_infomation">
+             <p class = "answer_name"><%= answer.user.nickname%></p>
+             <p class = "answer_text"><%= answer.text %></p>
+           </div>
+         <% end %>  
+       <% end %>
+     </div>
+  <div class = "answer_submit">
+    <%= form_tag("/infomations/#{@infomation.id}/comments/#{@comment.id}/answers",method: :post) do %>
+      <p class = "answer_submit_textarea"><textarea name = "text"></textarea></p>
+      <p class = "answer_submit_submit"><input type = "submit" value = "SEND"></p>
+    <% end%>
+  </div>
+</div>

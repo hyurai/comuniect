@@ -1,3 +1,258 @@
-// Place all the styles related to the infomations controller here.
+.infomation_index{
+    background-color: black;
+    font-weight: bold;
+    }
+.header_contents{
+    display: flex;
+    background-color: red;
+    }
+.header_logo{
+    display: flex;
+    font-family: "Comic Sans MS";
+    color: black;
+    position: relative
+    }
+.header_content{
+    text-direction: none;
+    margin-right: 0px 10px;
+    padding-right : 50px;
+    padding-left: 50px; 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: "Osaka−等幅","Osaka-Mono"
+    }
+.header_content:hover{
+     color: #fff;
+     background: #f56500;
+    }
+.nickname{
+    margin-right: 0px 10px;
+    padding-right : 50px;
+    padding-left: 50px; 
+    text-decoration: none;
+    color: black;
+    font-family: "Comic Sans MS";
+    }
+.header_content_css{
+    font-family: "Comic Sans MS";
+    }
+    
+.header_rannking_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #eb6100;
+    border-radius: 100vh;
+    padding: 15px 20px;
+    margin: 10px;
+    position: relative
+    }
+.infomations_index_main{
+    display: flex;
+    flex-wrap: wrap;
+    }
+.infomation_index_main{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    }
+.infomation_index_main_text{
+    display: flex;
+    }
+img.entertainer_image_url{
+    width:  120px;
+    height: 120px;
+    }
+.entertainer_name{
+    color: black;
+    background-color: #eb6100;
+    border-radius: 10px;
+    text-decoration: none;
+　　font-family: "Osaka−等幅","Osaka-Mono"
+    }
+.entertainer_age{
+    color: black;
+    background-color: #eb6100;
+    border-radius: 10px;
+    margin-left: 2px;
+    padding: 3px;
+　　font-family: "Osaka−等幅","Osaka-Mono"
+    }
+.entertainer_name:hover{
+    color: white;
+    
+    }
+.infomations_index_ranking{
+    display: flex;
+    }
+.infomation_index_ranking{
+    dispiay: flex;
+    flex-direction: column;
+    }
+.infomation_index_ranking_text{
+    display: flex;
+    }
+.infomation_new{
+    background-color: black;
+    
+    }
+.infomation_new_textarea{
+    text-align: center;
+    width: 100px;
+    }
+.infomation_new_textarea:focus{
+  
+    }
+.infomation_new_submit{
+    display       : inline-block;
+    border-radius : 5%;          
+    font-size     : 18pt;        
+    text-align    : center;     
+    cursor        : pointer;     
+    padding       : 12px 12px;   
+    background    : #000066;     
+    color         : #ffffff;     
+    line-height   : 1em;         
+    transition    : .3s;         
+    box-shadow    : 6px 6px 3px #666666;  
+    border        : 2px solid #000066;    
+    }
+.infomation_new_submit:hover{
+    box-shadow    : none;        
+    color         : #000066;    
+    background    : #ffffff;     
+    }
+.infomation_create{
+    text-align: center;
+    
+    }
+.infomation_create_contents{
+    display: inline-block;
+    }
+.infomation_create_image_url{
+    display: inline-block;
+    }
+.infomation_create_content_text{
+    display: flex;
+    }
+.infomation_show{
+    display: flex;
+    background-color: black;
+    }
+.infomations_show_main{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: red;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    }
+img.entertainer_image_url_show{
+    width: 300px;
+    height: 300px; 
+    }
+.keikoku{
+    margin:1em 0; padding:10px 10px 10px 35px;
+    border-width:2px 0;
+    border-style:solid;
+    border-color:#ff009c;
+    color:#666;
+    background:#ffebef url(/content/img/css/exclamation1.png) no-repeat 5px bottom;
+    font-size:11px;
+    line-height:1.5;
+    }
+.infomation_show_main_text{
+    background-color: #FF97C2;
+    border-radius: 20px;             
+    text-align:  center;               
+    }
+.entertainer_name_show{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    }
+.infomation_age_show{
+    font-weight: bold;
+    }
+.infomation_show_comments{
+    }
+.infomations_comments_box{
+    overflow: scroll;
+    height: 400px;
+    }
+.infomation_comment_text{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+  　justify-content: flex-start;
+  　align-items: flex-start;
+    }
+.comment_user{
+     text-align: center;
+     font-weight: bold;
+     font-family: 'Ubuntu Mono', monospace;
+     margin-right: 25px;
+     width: 80px;
+     background-color: white;
+     border-radius: 20vh;
+    }
+.comment_text{
+    text-align: center;
+    max-width: 500px; 
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 17px 13px 15px 18px;
+    border-radius: 12px;
+    background: red;
+    box-sizing: border-box;
+    margin:8px 0 0 !important; 
+    }
+.comment_text:first-child{
+    text-align: center;
+    color: black;
+    margin-top: 0 !important;
+    }
+.comment_text:after{
+    text-align: center;
+    color: black;
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    left: -26px;
+    border-right: 22px solid red;
+    }
+.infomation_show_comment{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    }
+textarea{
+     text-direction: none;
+     width: 500px;
+     height: 100px;
+    }
+input{
+    padding: 10px 100px 10px 100px;
+    border-radius: 20px;
+    margin-right: 80px;
+    margin-left: 130px;
+    margin-top: 20px;
+    }
+input:hover{
+    background-color: red;
+    color: white;
+    }// Place all the styles related to the infomations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/

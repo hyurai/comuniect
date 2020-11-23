@@ -1,3 +1,42 @@
+.comment_show{
+    text-align: center;
+    }
+.answer_index_infomation{
+    display: flex;
+    }
+.answer_submit_textarea{
+    text-align: center;
+    font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #1b2538;
+	border-radius: 4px
+    }
+.answer_submit_textarea:focus{
+    border: 1px solid #da3c41;
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+    }
+.answer_submit_submit{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #ECECEC;
+    transition: .4s;
+    }
+.answer_submit_submit:hover{
+    background: #00bcd4;
+    color: white;
+    }
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
