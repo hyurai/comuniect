@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'infomations#index'
-  resources :infomations do
+  resources :infomations,only:[:index,:new,:create,:show] do
     resources :comments,only:[:show,:create,:edit,:update,:destroy] do
       resources :answers,only:[:create]
     end
   end
-  resources :users
+  resources :users,only:[:show,:edit,:update]
   resources :infomations do
     resources :favorites,only:[:create,:destroy]
   end

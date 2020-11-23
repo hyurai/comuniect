@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :favorites_infomations, through: :favorites, source: :infomation
   
-  def already_favorites?(infomation)
+  def already_favorited?(infomation)
     self.favorites.exists?(infomation_id: infomation.id)
   end
 end
