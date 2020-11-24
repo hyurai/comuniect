@@ -1,3 +1,7 @@
+<div class = "header_contents">
+  <a class="header_content" href = "users/sign_out" data-method = "delete"><p>ログアウト</p></a>
+  <a class="header_content" href = "/infomations/<%= current_user.id%>"><p>マイページ</p></a>
+</div>
 <div class="infomation_new">
  <%= form_tag("/infomations",method: :post) do |f|%>
  　<p class = "infomation_new_textarea"><%= text_field_tag :talent_name %></p></br>
