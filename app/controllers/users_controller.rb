@@ -2,9 +2,9 @@ class UsersController < ApplicationController
     def new
     end
     def create
-        @user = User.new(super_params)
-        @user.create
-        redirect_to root
+         user = User.create(nickname: super_params[:nickname],like_entertainer: super_params[:like_entertainer])
+         logger.debug user.errors.inspect
+         byebug
     end
     def show
         @user = User.find(params[:id])
