@@ -1,7 +1,8 @@
 class InfomationsController < ApplicationController
     def index
         @infomations = Infomation.all
-        @infomations_rankings = Infomation.find(Favorite.group(:infomation_id).order(Arel.sql('count(infomation_id) Asc')).limit(3).pluck(:infomation_id))
+        @infomations_rankings = Infomation.find(Favorite.group(:infomation_id).order('count(infomation_id) Asc').limit(3).pluck(:infomation_id))
+        
     end
     def show
         @infomation = Infomation.find(params[:id])

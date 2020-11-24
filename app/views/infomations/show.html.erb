@@ -1,9 +1,9 @@
 <div class="header_contents">
     　<p class="header_logo">filebook</p>
     <% if user_signed_in? %>
-      <a class="header_content"><%= link_to 'ログアウト',destroy_user_session_path,method: :delete %></a>
-      <a class="header_content"><%= link_to 'マイページ',user_path(current_user)%></a>
-      <a class="header_content"><%= link_to '検索','/infomations/new'%></a>
+      <a class="header_content" href = "users/sign_out" data-method = "delete"><p>ログアウト</p></a>
+      <a class="header_content" href = "/infomations/<%= current_user.id%>"><p>マイページ</p></a>
+      <a class="header_content" href = "/infomations/new"><p>検索</p></a>
     <% else %>
       <a href = "/users/sign_in" class="header_content" ><p><span class = "header_content_css">ログイン</span></p></a>
       <a href = "/users/sign_up" class="header_content"><p>新規登録</p></a>

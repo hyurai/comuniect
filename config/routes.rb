@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :answers,only:[:create]
     end
   end
-  resources :users,only:[:show,:edit,:update]
+  resources :users,except:[:index]
   resources :infomations do
     resources :favorites,only:[:create,:destroy]
   end
