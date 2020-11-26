@@ -1,0 +1,9 @@
+.user_show{
+    display: flex;
+    color: blue;
+    }
+.users_edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }

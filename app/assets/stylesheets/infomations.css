@@ -109,7 +109,6 @@ img.entertainer_image_url{
   
     }
 .infomation_new_submit{
-    display       : inline-block;
     border-radius : 5%;          
     font-size     : 18pt;        
     text-align    : center;     
@@ -120,7 +119,8 @@ img.entertainer_image_url{
     line-height   : 1em;         
     transition    : .3s;         
     box-shadow    : 6px 6px 3px #666666;  
-    border        : 2px solid #000066;    
+    border        : 2px solid #000066; 
+    margin-bottom: 400px;
     }
 .infomation_new_submit:hover{
     box-shadow    : none;        
@@ -254,6 +254,19 @@ input:hover{
     background-color: red;
     color: white;
     }
-// Place all the styles related to the infomations controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*// Place all the styles related to the infomations controller here.*/
+/*// They will automatically be included in application.css.*/
+/*// You can use Sass (SCSS) here: http://sass-lang.com/*/
+.infomation_create{
+    background-color: black;
+    }
+.infomation_new{
+    margin-bottom: 400px;
+    }
+.users_edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-bottom: 400px;
+    }
