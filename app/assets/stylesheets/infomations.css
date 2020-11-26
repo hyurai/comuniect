@@ -127,23 +127,22 @@ img.entertainer_image_url{
 .infomation_show{
     display: flex;
     background-color: black;
+    margin-top: 0px;
     }
 .infomations_show_main{
     display: flex;
     flex-direction: column;
+    text-align: center;
     float: left;
+    margin-top: 40px;
     background-color: red;
-    margin: 10px;
-    padding: 30px;
     border-radius: 20px;
     margin-bottom: 80px;
-    margin-top: 100px;
-    margin-right: 200px;
-    margin-left: 200px;
+    margin-right: 80px;
     }
 img.entertainer_image_url_show{
-    width: 300px;
-    height: 300px; 
+    width: 200px;
+    height: 200px; 
     }
 .keikoku{
     margin:1em 0; padding:10px 10px 10px 35px;
@@ -224,13 +223,14 @@ textarea{
      text-direction: none;
      width: 500px;
      height: 100px;
+     margin: auto;
     }
 input{
-    padding: 10px 100px 10px 100px;
     border-radius: 20px;
-    margin-right: 80px;
-    margin-left: 130px;
-    margin-top: 20px;
+    padding: 20px 300px 20px 300px;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
     }
 input:hover{
     background-color: red;
