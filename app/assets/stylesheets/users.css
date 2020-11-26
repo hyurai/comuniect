@@ -1,9 +1,33 @@
 .user_show{
     display: flex;
-    color: blue;
+    flex-direction: column;
+    background-color: black;
+    padding-bottom: 500px;
+    color: white;
+    }
+.user_show_infomation{
+    margin: auto;
+    background-color: red;
+    border-radius: 4px;
+    margin-top: 30px;
+    padding: 20px;
+    }
+.user_show_main{
+    display: flex;
+    }
+.user_show_main_main{
+    margin-top: 5px;
+    text-align: center;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
     }
 .users_edit{
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+    background-color: black;
+    padding-bottom: 600px ;
+    } 

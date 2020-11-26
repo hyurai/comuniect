@@ -49,6 +49,9 @@
     margin: 10px;
     position: relative
     }
+.ranking_logo{
+    color: white;
+    }
 .infomations_index_main{
     display: flex;
     flex-wrap: wrap;
@@ -99,37 +102,18 @@ img.entertainer_image_url{
     }
 .infomation_new{
     background-color: black;
-    
+    text-align: center;
+    padding-bottom: 480px;
     }
 .infomation_new_textarea{
-    text-align: center;
+    padding-left: 430px;
     width: 100px;
     }
-.infomation_new_textarea:focus{
-  
-    }
 .infomation_new_submit{
-    border-radius : 5%;          
-    font-size     : 18pt;        
-    text-align    : center;     
-    cursor        : pointer;     
-    padding       : 12px 12px;   
-    background    : #000066;     
-    color         : #ffffff;     
-    line-height   : 1em;         
-    transition    : .3s;         
-    box-shadow    : 6px 6px 3px #666666;  
-    border        : 2px solid #000066; 
-    margin-bottom: 400px;
-    }
-.infomation_new_submit:hover{
-    box-shadow    : none;        
-    color         : #000066;    
-    background    : #ffffff;     
     }
 .infomation_create{
     text-align: center;
-    
+    padding-bottom: 480px;
     }
 .infomation_create_contents{
     display: inline-block;
@@ -183,8 +167,6 @@ img.entertainer_image_url_show{
     }
 .infomation_age_show{
     font-weight: bold;
-    }
-.infomation_show_comments{
     }
 .infomations_comments_box{
     overflow: scroll;
@@ -259,14 +241,13 @@ input:hover{
 /*// You can use Sass (SCSS) here: http://sass-lang.com/*/
 .infomation_create{
     background-color: black;
+    padding-top: 40px;
     }
-.infomation_new{
-    margin-bottom: 400px;
+.infomatiion_create_main{
+    background-color: red;
+    border-radius: 4px;
+    padding: 4px;
     }
-.users_edit{
+.infomation_crate_main_text{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    padding-bottom: 400px;
     }
