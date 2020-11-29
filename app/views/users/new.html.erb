@@ -5,8 +5,8 @@
 </div>
 <div class="users_new">
   <%= form_tag('/users',method: :post) do %>
-    <input type = "text" name = "nickname">
-    <input type = "text" name = "like_entertainer">
-    <input type = "submit" value = "登録する">
+    <input type = "text" name = "nickname" class = "infomation_new_nickname">
+    <input type = "text" name = "like_entertainer" class = "infomation_new_like_entertainer">
+    <input type = "submit" value = "登録する" class = "infomation_new_submit">
   <% end%>
 </div>
