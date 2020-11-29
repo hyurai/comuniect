@@ -1,42 +1,87 @@
-.comment_show{
+.comment_answer_show{
     text-align: center;
+    background-color: black;
+    color: blue;
     }
-.answer_index_infomation{
+.comment_answer_show_box{
+    overflow: scroll;
+    height: 400px;
+    }
+.comment_answer_main_text{
+    margin: 20px 0px 20px 0px;
     display: flex;
+  　justify-content: flex-start;
+  　align-items: flex-start; 
     }
-.answer_submit_textarea{
-    text-align: center;
-    font: 15px/24px sans-serif;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 0.3em;
-	transition: 0.3s;
-	letter-spacing: 1px;
-	color: #aaaaaa;
-	border: 1px solid #1b2538;
-	border-radius: 4px
-    }
-.answer_submit_textarea:focus{
-    border: 1px solid #da3c41;
-	outline: none;
-	box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
-    }
-.answer_submit_submit{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
+.comment_answer_user{
     font-weight: bold;
-    padding: 0.25em 0.5em;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: 25px;
+    width: 80px;
+    background-color: white;
+    border-radius: 20vh; 
+    }
+.comment_answer_text{
+    max-width: 500px; 
+    color: black;
+    font-weight: bold;
     text-decoration: none;
-    color: #00BCD4;
-    background: #ECECEC;
-    transition: .4s;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 17px 13px 15px 18px;
+    border-radius: 12px;
+    background: red;
+    box-sizing: border-box;
+    margin:8px 0 0 !important; 
     }
-.answer_submit_submit:hover{
-    background: #00bcd4;
-    color: white;
+.comment_answer_text:first_child{
+    color: black;
+    margin-top: 0 !important;
     }
-// Place all the styles related to the comments controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.comment_answer_text:after{
+    color: black;
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    left: -26px;
+    border-right: 22px solid red; 
+    }
+.answer_index_text{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+  　justify-content: flex-start;
+  　align-items: flex-start;
+    }
+.answer_name{
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: 25px;
+    width: 80px;
+    background-color: white;
+    border-radius: 20vh;
+    }
+.answer_text{
+    max-width: 500px; 
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 17px 13px 15px 18px;
+    border-radius: 12px;
+    background: red;
+    box-sizing: border-box;
+    margin:8px 0 0 !important; 
+    }
+.answer_text:first_child{
+    color: black;
+    margin-top: 0 !important;
+    }
+.answer_text:after{
+    color: black;
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    left: -26px;
+    border-right: 22px solid red;
+    }

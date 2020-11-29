@@ -1,15 +1,37 @@
-<div class="comment_show">
-   <p class = "comment_text"><%= @comment.text%></p>
+<div class="header_contents">
+  <p class="header_logo">filebook</p>
+  <% if user_signed_in? %>
+    <a class="header_content" href = "users/sign_out" data-method = "delete"><p>ログアウト</p></a>
+    <a class="header_content" href = "/users/<%= current_user.id%>"><p>マイページ</p></a>
+    <a class="header_content" href = "/infomations/new"><p>検索</p></a>
+    <a class = "header_content" href = "users/edit"><p>ユーザー編集</p></a>
+    <a href = "/infomations" class = "header_content"><p>ホーム画面に戻る</p></a>
+  <% else %>
+    <a href = "/users/sign_in" class="header_content" ><p><span class = "header_content_css">ログイン</span></p></a>
+    <a href = "/users/sign_up" class="header_content"><p>新規登録</p></a>
+    <a href = "#" class = "header_content" ><p>ランキング</p></a>
+    <a class="header_content" href = "/infomations/new"><p>検索</p></a>
+    <a href = "/infomations" class = "header_content"><p>ホーム画面に戻る</p></a>
+    <p class = "nickname">yumanagai Tankyu For Watching MyAplication!!</p>
+  <% end %>
+</div>
+<div class="comment_answer_show">
+  <div class = "comment_answer_show_box">
+    <div class = "comment_answer_main_text">
+      <p class="comment_answer_user"><%= @comment.user.nickname%></p>
+      <p class = "comment_answer_text"><%= @comment.text%></p>
+    </div>
      <div class = "answer_index">
        <% @answers.each do |answer| %>
          <% if  answer.comment.id == @comment.id%>
-           <div class = "answer_index_infomation">
+           <div class = "answer_index_text">
              <p class = "answer_name"><%= answer.user.nickname%></p>
              <p class = "answer_text"><%= answer.text %></p>
            </div>
          <% end %>  
        <% end %>
      </div>
+  </div>
   <div class = "answer_submit">
     <%= form_tag("/infomations/#{@infomation.id}/comments/#{@comment.id}/answers",method: :post) do %>
       <p class = "answer_submit_textarea"><textarea name = "text"></textarea></p>

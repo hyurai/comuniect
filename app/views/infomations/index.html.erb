@@ -4,7 +4,7 @@
     <% if user_signed_in? %>
       <a class="header_content" href = "/users/sign_out" data-method = "delete"><p>ログアウト</p></a>
         <a class="header_content" href = "/infomations/new"><p>検索</p></a>
-        <a class = "header_content" href = "users/<%= current_user.id%>/edit"><p>ユーザー編集</p></a>
+        <a class = "header_content" href = "users/edit"><p>ユーザー編集</p></a>
         <a class="header_content" href = "/users/<%= current_user.id%>" ><p>マイページ</p></a>
         <p class = "nickname">yumanagai Tankyu For Watching MyAplication!!</p>
     <% else %>
