@@ -2,9 +2,8 @@ class UsersController < ApplicationController
     def new
     end
     def create
-        User.create(nickname: super_params[:nickname],like_entertainer: super_params[:like_entertainer],user_id: current_user.id)
-         logger.debug user.errors.inspect
-         redirect_to '/infomations'
+        user =User.new(nickname: super_params[:nickname],like_entertainer: super_params[:like_entertainer],user_id: current_user.id)
+        user.save!
     end
     def show
         @user = User.find(params[:id])

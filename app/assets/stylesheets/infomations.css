@@ -239,6 +239,13 @@ input:hover{
 .infomation_crate_main_text{
     display: flex;
     }
-input.infomation_new_nickname{
+.infomation_show_button_delete{
+    width: 30px;
+    }
+.infomation_show_textarea{
+    width: 600px;
+    }
+.infomation_show_submit{
     
-    } 
+    
+    }
