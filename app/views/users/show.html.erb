@@ -1,11 +1,13 @@
 <div class = "header_contents">
   <a class="header_content" href = "users/sign_out" data-method = "delete"><p>ログアウト</p></a>
   <a class="header_content" href = "/infomations/new"><p>検索</p></a>
+  <a class = "header_content" href = "users/edit"><p>ユーザー編集</p></a>
   <a href = "/infomations" class = "header_content"><p class = "header_content_css">ホーム画面に戻る</p></a>
 </div>
 <div class="user_show">
   <div class = "user_show_infomation">
-    <p class="user_nickname">お気に入りの芸能人  <%= @user.nickname%></p>
+    <p class="user_nickname">ユーザーネーム<%= @user.nickname%></p>
+    <p class="user_like_entertaier">お気に入りの芸能人  <%= @user.like_entertaier%></p>
   </div>
   <div class="user_show_main">
     <% @favorite_infomations.each do |favorite_infomation|%>

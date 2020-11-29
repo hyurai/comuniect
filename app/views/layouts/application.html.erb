@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <div class = "header_contetns">
+      <% if user_signed_in ? %>
+        <a class="header_content" href = "/users/sign_out" data-method = "delete"><p>ログアウト</p></a>
+      <% end %>
+    </div>
     <%= yield %>
   </body>
 </html>
