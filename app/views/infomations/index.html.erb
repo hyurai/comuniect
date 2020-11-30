@@ -16,6 +16,8 @@
     <% end %>
   </div>
   <div class="infomations_index_main">
+  
+    <div class="information-wrapper">
     <% @infomations.each do |infomation|%>
       <div class = "infomation_index_main">
         <% if infomation.image_url.nil?%>
@@ -29,6 +31,8 @@
         </div>
       </div>
     <% end %>
+    </div>
+    
     <div class = "infomations_index_rannking">
     <h3 class = "ranking_logo">現在熱い芸能人ランキングトップ3</h3>
       <% @infomations_rankings.each do |infomation_ranking|%>

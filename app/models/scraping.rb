@@ -3,7 +3,7 @@ class Scraping < ApplicationRecord
         require 'mechanize'
         agent = Mechanize.new
         links = []
-        current_page = agent.get("https://talent-dictionary.com/s/jobs/3/20?page=1")
+        current_page = agent.get("https://talent-dictionary.com/s/jobs/3/20?page=4")
         elements = current_page.at('.home_talent_list_wrapper')
         boxs = elements.search('.item')
         roks = boxs.search('.right')
