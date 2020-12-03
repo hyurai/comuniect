@@ -5,13 +5,15 @@
 .user_show{
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: white;
     padding-bottom: 500px;
     color: white;
     }
 .user_show_infomation{
+    color: black;
     margin: auto;
-    background-color: red;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px;
     border-radius: 4px;
     margin-top: 30px;
     padding: 20px;
@@ -22,7 +24,8 @@
 .user_show_main_main{
     margin-top: 5px;
     text-align: center;
-    background-color: red;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
     border-radius: 10px;
     margin: 10px;
     padding: 10px;

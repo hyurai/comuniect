@@ -1,10 +1,11 @@
 .infomation_index{
-    background-color: black;
+    background-color: white;
     font-weight: bold;
     }
 .header_contents{
     display: flex;
     background-color: red;
+    margin-bottom: 5px;
     }
 .header_logo{
     display: flex;
@@ -38,22 +39,27 @@
     font-family: "Comic Sans MS";
     }
 .ranking_logo{
-    color: white;
+    color: black;
     }
 .infomations_index_main{
     display: flex;
+    }
+.infomation_wrapper{
+    display: flex;
     flex-wrap: wrap;
+    width: 100%;
     }
 .infomation_index_main{
-    display: flex;
-    flex-direction: column;
-    background-color: red;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     }
 .infomation_index_main_text{
+    text-align: center;
     display: flex;
+    width: 120px;
     }
 img.entertainer_image_url{
     width:  120px;
@@ -61,43 +67,32 @@ img.entertainer_image_url{
     }
 .entertainer_name{
     color: black;
-    background-color: #eb6100;
-    border-radius: 10px;
+    margin: auto;
     text-decoration: none;
-　　font-family: "Osaka−等幅","Osaka-Mono"
+    }
+.entertainer_name:hover{
+    border-bottom: solid  black;
     }
 .entertainer_age{
     color: black;
-    background-color: #eb6100;
-    border-radius: 10px;
-    margin-left: 2px;
-    padding: 3px;
-　　font-family: "Osaka−等幅","Osaka-Mono"
+    margin: auto;
     }
-.entertainer_name:hover{
-    color: white;
-    
-    }
-.infomations_index_ranking{
-    display: flex;
-    }
-.infomation_index_ranking{
-    dispiay: flex;
-    flex-direction: column;
+
+.infomations_index_rannking{
+    text-align: center;
     }
 .infomation_index_ranking_text{
     display: flex;
     }
 .infomation_new{
-    background-color: black;
     text-align: center;
-    padding-bottom: 480px;
+    background-color: white;
     }
 .infomation_new_textarea{
-    padding-left: 430px;
-    width: 100px;
+    width: 100%;
     }
 .infomation_new_submit{
+    width: 100%;
     }
 .infomation_create{
     text-align: center;
@@ -228,16 +223,18 @@ input:hover{
 /*// They will automatically be included in application.css.*/
 /*// You can use Sass (SCSS) here: http://sass-lang.com/*/
 .infomation_create{
-    background-color: black;
+    background-color: white;
     padding-top: 40px;
     }
-.infomatiion_create_main{
-    background-color: red;
+.infomation_create_main{
+    background-color: white;
     border-radius: 4px;
     padding: 4px;
+    border: solid 1px black ;
     }
 .infomation_crate_main_text{
     display: flex;
+    width: 120px;
     }
 .infomation_show_button_delete{
     width: 30px;
