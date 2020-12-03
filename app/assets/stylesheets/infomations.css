@@ -109,7 +109,7 @@ img.entertainer_image_url{
     }
 .infomation_show{
     display: flex;
-    background-color: black;
+    background-color: white;
     margin-top: 0px;
     }
 .infomations_show_main{
@@ -161,13 +161,14 @@ img.entertainer_image_url_show{
   　align-items: flex-start;
     }
 .comment_user{
+     background-color: black;
      text-align: center;
      font-weight: bold;
      font-family: 'Ubuntu Mono', monospace;
      margin-right: 25px;
      width: 80px;
-     background-color: white;
      border-radius: 20vh;
+     color: white;
     }
 .comment_text{
     text-align: center;
