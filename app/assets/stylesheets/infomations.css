@@ -249,6 +249,15 @@ input.infomation_show_delete_button:hover{
     background-color: white;
     color: black;
     }
+input.infomation_show_create_button{
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    }
+input.infomation_show_create_button:hover{
+    padding: 20px 40px 20px 40px;
+    border-radius: 0px;
+    }
 input.infomation_show_submit{
     padding: 20px 40px 20px 40px;
     border-radius: 0px;
@@ -262,10 +271,6 @@ input.infomation_new_textarea{
     padding: 70px;
     }
 input.infomation_new_submit{
-    padding: 2px 2px 2px 2px;
     border-radius: 0px;
-    }
-input.infomation_new_submit:hover{
-    background-color: white;
-    color: black;
+    padding: 30px 30px 30px 30px;
     }

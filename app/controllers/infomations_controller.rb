@@ -10,13 +10,8 @@ class InfomationsController < ApplicationController
     end
     def create
         talent_name = params[:talent_name]
-        if Mechanize.new
-            agent = Mechanize.new
-            personal_page = agent.get('https://talent-dictionary.com/' + talent_name)
-        else
-            flash.now[:danger] = "登録に失敗しました"
-            render :new
-        end
+        agent = Mechanize.new
+        personal_page = agent.get('https://talent-dictionary.com/' + talent_name) 
         aaas = personal_page.at('.talent_name_wrapper') 
         @ages = aaas.at('.age').inner_text.delete('歳').to_i if aaas.at('.age')
         @names = aaas.at('h1').inner_text  if aaas.at('h1')
