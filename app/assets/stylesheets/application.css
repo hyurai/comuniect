@@ -13,6 +13,73 @@
  *= require_tree .
  *= require_self
  */
+.devise_home{
+    background-color: #0066CC;
+    padding: 100px;
+    }
+.sign_in{
+    text-align: center;
+    background-color : #DDDDDD;
+    margin: 100px;
+    }
+.sign_in_button{
+    border-radius: 0px;
+    width: 100px;
+    height: 10px;
+    }
+.sign_in_button:hover{
+    background-color: white;
+    color: black;
+    }
+.sign_in_button_submit{
+    border-radius: 0px;
+    text-align: center;
+    margin-left: 0px;
+    }
+.sign_in_button_submit:hover{
+    background-color:#3399FF;
+    color: white;
+    }
+.checkbox{
+    display: flex;
+    padding-left: 200px;
+    }
+.field-c{
+    margin-right :10px;
+    }
+.devise_sub_sign_in{
+    display: flex;
+    text-align: center;
+    padding-left: 300px;
+    margin-top: 40px;
+    }
+.sign_in_sign_up{
+    padding: 20px 40px 20px 40px;
+    margin: 3px;
+    border-radius: 0px;
+    background-color: white ;
+    color: #808080;
+    }
+.sign_in_sign_up:hover{
+    background-color: #3399FF;
+    color: white;
+    }
+.sign_in_forget{
+    padding: 20px 40px 20px 40px;
+    margin: 3px;
+    border-radius: 0px;
+    background-color: white ;
+    color: #808080;
+    }
+.sign_in_forget:hover{
+    background-color: #3399FF;
+    color: white;
+    }
 .field{
     text-align: center;
     }
+.field_text{
+    padding: 20px 20px 20px 20px;
+    background-color: red;
+    }
+    
