@@ -93,4 +93,18 @@ input.sign_up_button:hover{
     padding: 20px 20px 20px 20px;
     background-color: red;
     }
+.sign_up_sign_in{
+    padding: 20px 40px 20px 40px;
+    margin-top: 20px;
+    border-radius: 0px;
+    background-color: white ;
+    color: #808080;
+    }
+.sign_up_sign_in:hover{
+    background-color: #3399FF;
+    color: white;
+    }
+.sign_up_button{
+    margin-bottom: 20px;
     
+    }

@@ -27,11 +27,13 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "もう一度パスワードを入力",class: "sign_up_button" %>
   </div>
 
-  <div class="actions">
+  <div class="actions-a">
     <%= f.submit "Sign up",class: "sign_up_button" %>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%- if controller_name != 'sessions' %>
+  <%= link_to "Log in", new_session_path(resource_name) ,class: "sign_up_sign_in"%><br />
+<% end %>
 </div>
 </div>
