@@ -15,7 +15,7 @@
  */
 .devise_home{
     background-color: #0066CC;
-    padding: 100px;
+    padding: 50px 100px 100px 100px;
     }
 .sign_in{
     text-align: center;
@@ -77,6 +77,14 @@
     }
 .sign_up{
     text-align: center ;
+    background-color: #DDDDDD;
+    }
+input.sign_up_button{
+    border-radius: 0px;
+    }
+input.sign_up_button:hover{
+    background-color: white;
+    color: black;
     }
 .field{
     text-align: center;
