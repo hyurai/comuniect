@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
         redirect_to "/infomations/#{comment.infomation.id}"
     end
     def show
-        @infomation = Comment.find(params[:infomation_id])
+        @infomation = Infomation.find(params[:infomation_id])
         @comment = Comment.find(params[:id])
         @answers = @comment.answers
     end
