@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+これは女優について話すSNSです。もう少し噛み砕くとお題が決まっている掲示板サイトみたいなものです。
+今回使った機能はログイン機能、コメント機能、コメントに対するアンサー機能、いいね機能、検索機能（スクレピングを応用）です。
+自分の中で気に入っているものはコメント機能のデザインです。少しLINE風になっています。
