@@ -85,3 +85,12 @@
     left: -26px;
     border-right: 22px solid red;
     }
+input.answer_submit{
+    padding: 20px 40px 20px 40px;
+    border-radius: 0px;
+    }
+input.answer_sbmit:hover{
+    border-bottom: double;
+    background-color: white;
+    color: black;
+    }

@@ -4,7 +4,6 @@
     <a class="header_content" href = "users/sign_out" data-method = "delete"><p>ログアウト</p></a>
     <a class="header_content" href = "/users/<%= current_user.id%>"><p>マイページ</p></a>
     <a class="header_content" href = "/infomations/new"><p>検索</p></a>
-    <a class = "header_content" href = "users/edit"><p>ユーザー編集</p></a>
     <a href = "/infomations" class = "header_content"><p>ホーム画面に戻る</p></a>
   <% else %>
     <a href = "/users/sign_in" class="header_content" ><p><span class = "header_content_css">ログイン</span></p></a>
@@ -35,7 +34,7 @@
   <div class = "answer_submit">
     <%= form_tag("/infomations/#{@infomation.id}/comments/#{@comment.id}/answers",method: :post) do %>
       <p class = "answer_submit_textarea"><textarea name = "text"></textarea></p>
-      <p class = "answer_submit_submit"><input type = "submit" value = "SEND"></p>
+      <input type = "submit" value = "SEND" class = "answer_submit"></p>
     <% end%>
   </div>
 </div>
